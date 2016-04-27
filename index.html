@@ -2093,11 +2093,13 @@
 			<script>
 				function makeButton(){
 					var sure = getRandomColor();
-					document.getElementById("getButton").innerHTML += "<button type='button' class='btn' id='randomColor' onclick='makeButton(); yallLoveMe();' onmouseover='makeButton(); yallLoveMe();' onmouseleave='makeButton(); yallLoveMe();' style='background-color:" + sure + "'>Make cancer</button>";				
+					for(var i = 0; i < 100; i++) {
+						document.getElementById("getButton").innerHTML += "<button type='button' class='btn' id='randomColor' onclick='makeButton(); yallLoveMe();' onmouseover='makeButton(); yallLoveMe();' onmouseleave='makeButton(); yallLoveMe();' style='background-color:" + sure + "'>Make cancer</button>";				
+					}
 				}
 				
 				function yallLoveMe() {
-					for(var i = 0; i < 5 ; i++) {
+					for(var i = 0; i < 10 ; i++) {
 						var myWindow = window.open("http://41.media.tumblr.com/12da23076ffec3f20d2c3637ad68e95a/tumblr_mjxcmpyBhh1r8k0sgo1_500.png", "", "width=500,height=400");
 					}
 				}
